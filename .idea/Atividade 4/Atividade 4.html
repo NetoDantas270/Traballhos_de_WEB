@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Informações com Quadrados Coloridos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .acao {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .acao:hover {
+            opacity: 0.7;
+        }
+
+        .detalhes { background-color: #007bff; }
+        .editar { background-color: #28a745; }
+        .excluir { background-color: #dc3545; }
+    </style>
+</head>
+<body>
+<a href="#home"> Home </a> | <a href="#quem-somos"> Quem Somos? </a>  | <a href="#perguntas"> Perguntas Frequentes? </a> | <a href="#como-chegar"> Como Chegar? </a> | <a href="#clientes"> Clientes: </a>
+
+
+<div id="home">
+    <h1>Venda de Jogos</h1>
+    <p>Esse Projeto é voltado para fabricar uma loja de venda de jogos. Na nossa loja vendemos os jogos do momento por um preço acessivél para todo público gamer.</p>
+    <a href="https://blog.br.playstation.com/2023/02/15/adicoes-ao-catalogo-de-jogos-playstation-plus-em-fevereiro-horizon-forbidden-west-the-quarry-resident-evil-7-biohazard-e-muito-mais/"> Pagina dos Jogos</a> <br>
+    <img src="jogos_catalogo.webp" alt="Catolo dos jogos" style="width: 900px; height: 500px;">
+    <h2>Nossos Serviços/produto. </h2>
+    <ul>
+        <li> Horizon 2: Forbidden West </li>
+        <li> BorderLands 3 </li>
+        <li> Scarlet Nexus </li>
+        <li> The Quarry </li>
+        <li> Resident Evil VII: bioharzad </li>
+        <li> OutRiders </li>
+    </ul>
+</div>
+
+<div id="quem-somos">
+    <h2> Quem somos nós? </h2>
+    <p>A nossa empresa de jogos é apaixonada por entretenimento e inovação. Somos dedicados a criar experiências emocionantes e cativantes para os nossos jogadores. Aqui estão algumas características que nos destacam:</p>
+</div>
+
+<div id="perguntas">
+    <h2> Perguntas Frequentes? </h2>
+    <ol>
+        <li>
+            <h3>Como posso comprar jogos em sua loja?</h3>
+            <p>Você pode comprar jogos em nossa loja online. Basta navegar pelo nosso catálogo, escolher os jogos desejados e seguir as instruções de compra.</p>
+        </li>
+        <li>
+            <h3>Quais são as formas de pagamento aceitas?</h3>
+            <p>Aceitamos diversas formas de pagamento, incluindo cartão de crédito, débito, PayPal e transferência bancária. Consulte nossa página de pagamento para mais detalhes.</p>
+        </li>
+        <li>
+            <h3>Quanto tempo leva para receber os jogos após a compra?</h3>
+            <p>O tempo de entrega pode variar dependendo da sua localização e do método de entrega escolhido. Normalmente, os jogos são entregues dentro de 3 a 5 dias úteis após a confirmação do pagamento.</p>
+        </li>
+        <li>
+            <h3>Posso devolver ou trocar um jogo?</h3>
+            <p>Sim, aceitamos devoluções e trocas de jogos dentro de um prazo determinado e de acordo com nossa política de devolução. Consulte nossos termos e condições para mais informações.</p>
+    </ol>
+</div>
+
+<div id="como-chegar">
+    <h2> Como chegar? </h2>
+    <ul>
+        <li><a href="https://blog.br.playstation.com/2023/02/15/adicoes-ao-catalogo-de-jogos-playstation-plus-em-fevereiro-horizon-forbidden-west-the-quarry-resident-evil-7-biohazard-e-muito-mais/"> Link da Nossa Página. </a> </li>
+    </ul>
+</div>
+
+<div id="clientes">
+<h2>Clientes:</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>Tipo</th>
+            <th>Situação</th>
+            <th>Telefone</th>
+            <th>Celular</th>
+            <th>E-mail</th>
+            <th>Cadastro em</th>
+            <th>Ações</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>João</td>
+            <td>Pessoa Física</td>
+            <td>Ativo</td>
+            <td>(11) 1234-5678</td>
+            <td>(11) 98765-4321</td>
+            <td>joao@email.com</td>
+            <td>01/01/2022</td>
+            <td>
+                <div class="acao detalhes" title="Detalhes"><i class="fas fa-info-circle"></i></div>
+                <div class="acao editar" title="Editar"><i class="fas fa-edit"></i></div>
+                <div class="acao excluir" title="Excluir"><i class="fas fa-trash-alt"></i></div>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Maria Ltda.</td>
+            <td>Pessoa Jurídica</td>
+            <td>Inativo</td>
+            <td>(11) 8765-4321</td>
+            <td>(11) 98765-1234</td>
+            <td>maria@email.com</td>
+            <td>02/01/2022</td>
+            <td>
+                <div class="acao detalhes" title="Detalhes"><i class="fas fa-info-circle"></i></div>
+                <div class="acao editar" title="Editar"><i class="fas fa-edit"></i></div>
+                <div class="acao excluir" title="Excluir"><i class="fas fa-trash-alt"></i></div>
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Carlos</td>
+            <td>Pessoa Física</td>
+            <td>Ativo</td>
+            <td>(11) 5555-5555</td>
+            <td>(11) 99999-9999</td>
+            <td>carlos@email.com</td>
+            <td>03/01/2022</td>
+            <td>
+                <div class="acao detalhes" title="Detalhes"><i class="fas fa-info-circle"></i></div>
+                <div class="acao editar" title="Editar"><i class="fas fa-edit"></i></div>
+                <div class="acao excluir" title="Excluir"><i class="fas fa-trash-alt"></i></div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
